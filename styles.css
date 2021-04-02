@@ -178,15 +178,66 @@ h1 {
     }
 
 .about__banner {
+    position: relative;
     min-height: 10rem;
     max-height: 37rem;
-    background: url('img/banner.jpg') center no-repeat;
-    background-size: cover;
+    text-align: center;
+    }
+
+.about__banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .about__banner p {
     color: var(--white);
     font-weight: 500;
     font-size: 3rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: calc(40%);
+    }
+
+.carta {
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carta__title {
+    font-size: 3rem;
+}
+
+.carta__separator{
+    border-bottom: .4rem solid var(--orange) ;
+    width: 90%;
+}
+
+.cardCarta {
+    width: 90%;
+    min-width: 25rem;
+    max-width: 38rem;
+    margin: 3rem 0 ;
+}
+
+.cardCarta__image {
+    width: 100%;
+}
+
+.cardCarta__image img {
+    width: 100%;
+}
+
+.cardCarta__title {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+.cardCarta__price {
+    font-size: 2rem;
+    margin-top: 1rem;
 }
