@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css"/>
     <title>Budapest</title>
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Didact + Gothic & display = swap" rel = "hoja de estilo">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section class="whatsappButton"><a href="https://api.whatsapp.com/send?phone=573023869335"></a></section>
+
+    <section class="whatsappButton">
+        <a href="https://api.whatsapp.com/send?phone=573023869335"></a>
+    </section>
+
     <header>
-        <div>
-            <p>Horario Domicilios: Lunes a Domingo de 08:00 a 16:00 </p>
-            <a href="https://www.instagram.com/restaurante.budapest/">
-                <span></span>
+        <div class="headerUp">
+            <p class="schedule"> 
+                <span>Horario Domicilios: </span>  
+                Lunes a Domingo de 08:00 a 16:00 
+            </p>
+
+            <a class="instagram" href="https://www.instagram.com/restaurante.budapest/">
+                <span class="baseIcons"></span>
                 <p>Siguenos @restaurante.budapest</p>
             </a>
         </div>
-        <div>
-            <p>
-                <span></span>
-                Restaurante Budapest
+
+        <div class="container__logo">
+            <span class="baseIcons logo"></span>
+            <p class="logo__text">
+                Restaurante
+                <br> Budapest
             </p>
-            <nav>
+
+            <nav class="menu">
                 <ul>
                     <li>Inicio</li>
                     <li>Sobre Nosotros</li>
@@ -32,96 +47,122 @@
             </nav>
         </div>
     </header>
-    <section class="main">
-        <div class="main__hero">
-            <img/>
-        </div>
-        <div class="main__title">
-            <h1>Sobre Nosotros</h1>
-        </div>
-        <p class="main__description">Texto largo que se pone como descripción</p>
-        <div class="container__card">
-            <div class="card">
-                <span class="card__icon"></span>
-                <h3 class="card__title">Comida Casera</h3>
-                <p class="card__text">La mejor comida con el <b>sazón hogareño</b>.</p>
+
+    <section class="hero">
+        <img src="./img/hero.jpg" alt="imagen represantativa del restaurante">
+    </section>
+    
+    <main>
+        <section class="about">
+
+            <div class="about__title">
+                <h1> Sobre nosotros </h1>
             </div>
 
-            <div class="card">
-                <span class="card__icon"></span>
-                <h3 class="card__title">Ingredientes Frescos</h3>
-                <p class="card__text">Nos preocupa tu bienestar por eso para nuestras comidas seleccionamos <b>lo mejor de lo mejor</b>.</p>
+            <p class="about__description">
+                Somos un restaurante especializado en comida criolla casera con más de 8 años de experiencia, contamos con servicio de 2 pisos y todas las medidas de bioseguridad, nos gusta decir que <b>hemos crecido con la loma.</b> 
+
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span class="baseIcons iconCooking" ></span>
+                    <h3 class="card__title">Comida Casera</h3>
+                    <p class="card__text">La mejor comida con el <b>sazón hogareño</b>.</p>
+                </div>
+    
+                <div class="card">
+                    <span class="baseIcons iconVegetables"></span>
+                    <h3 class="card__title">Ingredientes Frescos</h3>
+                    <p class="card__text">Nos preocupa tu bienestar por eso para nuestras comidas seleccionamos <b>lo mejor de lo mejor</b>.</p>
+                </div>
+    
+                <div class="card">
+                    <span class="baseIcons iconHere"></span>
+                    <h3 class="card__title">Ubicados</h3>
+                    <p class="card__text">Nos encontramos en <b>Loma de los Bernal</b> en Medellin, diagonal a una parada del metrobus.</p>
+                </div>
+
             </div>
 
-            <div class="card">
-                <span class="card__icon"></span>
-                <h3 class="card__title">Comida Casera</h3>
-                <p class="card__text">Nos encontramos en <b>Loma de los Bernal</b> en Medellin, diagonal a una parada del metrobus.</p>
+            <div class="about__banner">
+                <p>“Sazón con amor”</p>
             </div>
-        </div>
-        <div class="main__banner">
-            <p>“Sazón con amor”</p>
-        </div>
-    </section>
-    <section class="container__carta">
-        <h1 class="carta__tilte">Carta</h1>
-        <div class="carta__separator"></div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+        </section>
+
+        <section class="carta">
+            <h1 class="carta__tilte">Carta</h1>
+            <div class="carta__separator"></div>
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div><div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+            
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-        <div class="cardCarta">
-            <div class="cardCarta__imgage">
-                <img src="https://dummyimage.com/400x400/e06721/fff" />
+
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                </div>
+                <h3 class="cardCarta__title">Comida Casera</h3>
+                <p class="cardCarta__price">$ xx.xxx</p>
             </div>
-            <h3 class="cardCarta__title">Comida Casera</h3>
-            <p class="cardCarta__price">$ xx.xxx</p>
-        </div>
-    </section>
+
+        </section>
+    </main>
+
     <footer>
         <section>
             <article>
@@ -150,7 +191,7 @@
             <p>cuenta de ahorros de bancolombia 33123257851</p>
         </section>
         <section>
-            <p>Creado por <a href="https://www.behance.net/julymc">July Muños</a></p>
+            <p>Creado por <a href="https://www.behance.net/julymc">July Muñoz</a></p>
             <p>Codificado por <a href="https://github.com/TonyLuque">Anthony Luque</a></p>
             <p>Todos los derechos reservados ©2021</p>
         </section>

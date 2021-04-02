@@ -1,16 +1,192 @@
 :root {
     --black: #1A1C20;
+    --brown: #D44000;
+    --orange: #FF7A00;
+    --white: #fff;
+    }
 
-}
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    }
 
 * {
-    padding: 0%;
     margin: 0%;
     list-style: none;
-}
+    padding: 0%;
+    text-decoration: none;
+    }
 
 header {
     background-color: var(--black);
+    color: var(--white);
     width: 100%;
-    height: 220px;
+    height: auto;
+    }
+
+/* Header up */
+.schedule {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 0 2rem;
+    padding-top: 3rem;
+    text-align: center;
+    }
+
+.schedule span {
+    font-weight: 500;
+    }
+
+.instagram {
+    align-items: center;
+    display: flex;
+    color: var(--white);
+    justify-content: center;
+    padding-top: 1rem;
+    outline: none;
+    }
+
+.baseIcons {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.instagram span {
+    background-image: url('./img/Icons/Instagram.svg');
+    height: 2rem;
+    width: 2rem;
+    }
+
+.instagram p {
+    padding-left: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    }
+
+/* Logo */
+.container__logo {
+    display: flex;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    }
+
+.logo {
+    background-image: url('./img/Logo.png');
+    height: 6rem;
+    width: 7.4rem;
+    }
+
+.container__logo p{
+    font-family: 'Didact Gothic', sans-serif;
+    line-height: 2.2rem;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+/* menu */
+.menu {
+    display: none;
+    }
+
+/* Hero */
+.hero {
+    width: 100%;
+    }
+
+ .hero img {
+     width: 100%;
+     object-fit: cover;
+    }
+
+
+/* about */
+.about__title {
+    color: var(--white);
+    align-items: center;
+    background-color: var(--brown);
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    }
+
+.about__description {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0 2rem;
+    padding-top: 3rem;
+    text-align: center;
+    }
+
+/* cards */
+.cards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+    padding: 0 2rem;
+    }
+
+.card {
+    align-items: center;
+    display: inherit;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    text-align: center;
+    }
+
+.card span {
+    height: 10rem;
+    width: 10rem;
+    }
+
+.iconCooking {
+    background-image: url('./img/Icons/Icon\ Cooking.svg');
+    }
+
+.iconVegetables {
+    background-image: url('./img/Icons/Icon\ vegetables.svg');
+    }
+
+.iconHere {
+    background-image: url('img/Icons/Icon\ here.svg');
+    }
+
+.card__title {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+
+.card__text {
+    font-size: 1.8rem;
+    }
+
+.about__banner {
+    min-height: 10rem;
+    max-height: 37rem;
+    background: url('img/banner.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.about__banner p {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
 }
