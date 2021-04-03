@@ -19,7 +19,7 @@
         </a>
     </section>
 
-    <header>
+    <header id="inicio">
         <div class="headerUp">
             <p class="schedule"> 
                 <span>Horario Domicilios: </span>  
@@ -42,14 +42,18 @@
             </p>
         </div>
 
-        <span class="baseIcons iconMenu" onclick="alert('oa')"></span>
+        <span class="baseIcons iconMenu" onclick="menu()"></span>
 
-        <nav class="menu ">
+        <nav id="menu" class="menu ">
             <ul>
-                <li>Inicio</li>
-                <li>Sobre Nosotros</li>
-                <li>Carta</li>
-                <li>Contacto</li>
+                <span id="close-menu" onclick="menu()">X</span>
+                <li><a onclick="menu()" href="#inicio">Inicio</a></li>
+                <div class="menu__separator"></div>
+                <li><a onclick="menu()" href="#about">Sobre Nosotros</a></li>
+                <div class="menu__separator"></div>
+                <li><a onclick="menu()" href="#carta">Carta</a></li>
+                <div class="menu__separator"></div>
+                <li><a onclick="menu()" href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -59,7 +63,7 @@
     </section>
     
     <main>
-        <section class="about">
+        <section id="about" class="about">
 
             <div class="about__title">
                 <h1> Sobre nosotros </h1>
@@ -99,13 +103,13 @@
 
         </section>
 
-        <section class="carta">
+        <section id="carta" class="carta">
             <h1 class="carta__title">Carta</h1>
             <div class="carta__separator"></div>
 
             <div class="cardCarta">
                 <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                    <img src="img/hero.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
@@ -113,7 +117,7 @@
 
             <div class="cardCarta">
                 <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                    <img src="img/Image1.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
@@ -121,7 +125,7 @@
 
             <div class="cardCarta">
                 <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                    <img src="img/Image2.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
@@ -129,7 +133,7 @@
 
             <div class="cardCarta">
                 <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                    <img src="img/Image3.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
@@ -137,7 +141,7 @@
             
             <div class="cardCarta">
                 <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                    <img src="img/Image4.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
@@ -145,7 +149,7 @@
 
             <div class="cardCarta">
                 <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
+                    <img src="img/Image5.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
@@ -168,7 +172,7 @@
             </div>
 
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <article>
                 <div class="container__contact-title">
                     <span class="baseIcons iconPhone"></span>
@@ -192,7 +196,7 @@
         </section>
         <section class="bank">
             <p class="bank__small">Tambien puedes cancelar a la</p>
-            <p class="bank__big">cuenta de ahorros de bancolombia 33123257851</p>
+            <p class="bank__big">cuenta de ahorros de bancolombia 33 123 257 851</p>
         </section>
     </main>
 
@@ -201,5 +205,17 @@
             <p>Codificado por <a href="https://github.com/TonyLuque">Anthony Luque</a></p>
             <p>Todos los derechos reservados ©2021</p>
     </footer>
+
+    <script>
+        function menu(){
+            let menu = document.getElementById("menu")
+
+            if (menu.style.display == "none" || menu.style.display == "") {
+                menu.style.display = "flex"
+            } else {
+                menu.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>
