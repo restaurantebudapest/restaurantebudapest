@@ -18,6 +18,19 @@ html {
     text-decoration: none;
     }
 
+.whatsappButton {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    z-index: 1;
+}
+
+.whatsapp {
+    background-image: url('img/Icons/whatsapp.svg');
+    width: 5rem;
+    height: 5rem;
+}
+    
 header {
     background-color: var(--black);
     color: var(--white);
@@ -68,14 +81,26 @@ header {
 /* Logo */
 .container__logo {
     display: flex;
-    padding-left: 2rem;
-    padding-top: 2rem;
+    align-items: flex-end;  
+}
+
+.container__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--black);
+    color: var(--white);
+    z-index: 1;
     }
 
 .logo {
     background-image: url('./img/Logo.png');
     height: 6rem;
     width: 7.4rem;
+    padding-right: 2rem; 
     }
 
 .container__logo p{
@@ -83,15 +108,19 @@ header {
     line-height: 2.2rem;
     font-size: 2rem;
     font-weight: normal;
-    padding-left: 1.5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
 }
 
 /* menu */
 .menu {
     display: none;
     }
+
+.iconMenu {
+    background-image: url('img/Icons/menu.svg');
+    height: 3rem;
+    width: 3rem;
+    margin-top: 1.5rem;
+}
 
 /* Hero */
 .hero {
@@ -210,6 +239,8 @@ h1 {
 
 .carta__title {
     font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .carta__separator{
@@ -240,4 +271,72 @@ h1 {
 .cardCarta__price {
     font-size: 2rem;
     margin-top: 1rem;
+}
+
+.contact {
+    padding: 2.4rem;
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
+}
+
+.container__contact-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.iconPhone {
+    background-image: url('./img/Icons/Icon\ Phone.svg');
+    height: 3rem;
+    width: 3rem;
+}
+
+.iconAddress {
+    background-image: url('./img/Icons/Icon\ Address.svg');
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.container__contact-description {
+    margin-bottom: 2rem;
+}
+
+.contact__description {
+    font-size: 2rem;
+}
+
+.bank {
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.bank__small {
+    font-size: 1.8rem;
+}
+
+.bank__big{
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    font-size: 1.4rem;
+}
+
+footer p a {
+    color: var(--orange);
 }

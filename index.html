@@ -14,7 +14,9 @@
 <body>
 
     <section class="whatsappButton">
-        <a href="https://api.whatsapp.com/send?phone=573023869335"></a>
+        <a href="https://api.whatsapp.com/send?phone=573023869335">
+            <span class="baseIcons whatsapp"></span>
+        </a>
     </section>
 
     <header>
@@ -30,23 +32,27 @@
             </a>
         </div>
 
+    </header>
+    <div class="container__menu">
         <div class="container__logo">
             <span class="baseIcons logo"></span>
             <p class="logo__text">
                 Restaurante
                 <br> Budapest
             </p>
-
-            <nav class="menu">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Sobre Nosotros</li>
-                    <li>Carta</li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
         </div>
-    </header>
+
+        <span class="baseIcons iconMenu" onclick="alert('oa')"></span>
+
+        <nav class="menu ">
+            <ul>
+                <li>Inicio</li>
+                <li>Sobre Nosotros</li>
+                <li>Carta</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </div>
 
     <section class="hero">
         <img src="./img/hero.jpg" alt="imagen represantativa del restaurante">
@@ -94,7 +100,7 @@
         </section>
 
         <section class="carta">
-            <h1 class="carta__tilte">Carta</h1>
+            <h1 class="carta__title">Carta</h1>
             <div class="carta__separator"></div>
 
             <div class="cardCarta">
@@ -162,40 +168,38 @@
             </div>
 
         </section>
+        <section class="contact">
+            <article>
+                <div class="container__contact-title">
+                    <span class="baseIcons iconPhone"></span>
+                    <p class="contact__title">Teléfonos de Domicilios</p>
+                </div>
+                <div class="container__contact-description">
+                    <p class="contact__description">Números fijo: 507 28 13- 238 98 36</p>
+                    <p class="contact__description">Celular: 302 386 93 35</p>
+                </div>
+            </article>
+            <article>
+                <div class="container__contact-title">
+                    <span class="baseIcons iconAddress"></span>
+                    <p class="contact__title">Dirección</p>
+                </div>
+                <div class="container__contact-description">
+                    <p class="contact__description">Cra. 83A n° 9 -45</p>
+                    <p class="contact__description">La loma de los Bernal - Medellín</p>
+                </div>
+            </article>
+        </section>
+        <section class="bank">
+            <p class="bank__small">Tambien puedes cancelar a la</p>
+            <p class="bank__big">cuenta de ahorros de bancolombia 33123257851</p>
+        </section>
     </main>
 
     <footer>
-        <section>
-            <article>
-                <div>
-                    <span></span>
-                    <p>Teléfonos de Domicilios</p>
-                </div>
-                <div>
-                    <p>Números fijo: 507 28 13- 238 98 36</p>
-                    <p>Celular: 302 386 93 35</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <span></span>
-                    <p>Dirección</p>
-                </div>
-                <div>
-                    <p>Cra. 83A n° 9 -45</p>
-                    <p>La loma de los Bernal - Medellin</p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <p>Tambien puedes cancelar a la</p>
-            <p>cuenta de ahorros de bancolombia 33123257851</p>
-        </section>
-        <section>
             <p>Creado por <a href="https://www.behance.net/julymc">July Muñoz</a></p>
             <p>Codificado por <a href="https://github.com/TonyLuque">Anthony Luque</a></p>
             <p>Todos los derechos reservados ©2021</p>
-        </section>
     </footer>
 </body>
 </html>
