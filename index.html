@@ -104,72 +104,16 @@
         </section>
 
         <section id="carta" class="carta">
-            <h1 class="carta__title">Carta</h1>
-            <div class="carta__separator"></div>
+            <!-- <h1 class="carta__title">Carta</h1>
+            <div class="carta__separator"></div> -->
 
-            <div class="cardCarta">
+            <!-- <div class="cardCarta">
                 <div class="cardCarta__image">
                     <img src="img/hero.jpg" />
                 </div>
                 <h3 class="cardCarta__title">Comida Casera</h3>
                 <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="img/Image1.jpg" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="img/Image2.jpg" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="img/Image3.jpg" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-            
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="img/Image4.jpg" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="img/Image5.jpg" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
-
-            <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="https://dummyimage.com/400x400/e06721/fff" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div>
+            </div> -->
 
         </section>
         <section id="contact" class="contact">
@@ -205,8 +149,30 @@
             <p>Creado por <a href="https://www.behance.net/julymc">July Muñoz</a> y <a href="https://github.com/TonyLuque">Anthony Luque</a></p>
             <p>Todos los derechos reservados ©2021</p>
     </footer>
+    
+    <script type="text/javascript" src="carta.json"></script>
 
     <script>
+        let mydata = JSON.parse(data);
+        let carta = document.getElementById("carta")
+        let allCarta = `<h1 class="carta__title">Carta</h1>
+            <div class="carta__separator"></div>`;
+        con = 0;
+        let fullCarta = mydata.map(() => {
+            allCarta += `
+            <div class="cardCarta">
+                <div class="cardCarta__image">
+                    <img src="img/` + mydata[con].image +`.jpg" />
+                </div>
+                <h3 class="cardCarta__title">`+ mydata[con].name +`</h3>
+                <p class="cardCarta__price">$ `+ mydata[con].price +`</p>
+            </div>
+            `;
+            con ++;
+        }
+        );
+        carta.innerHTML = allCarta
+
         function menu(){
             let menu = document.getElementById("menu")
 

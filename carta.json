@@ -1,0 +1,27 @@
+data = `[
+    {
+        "name" : "plato 1", 
+        "price" : "20.000",
+        "image" : "hero"
+    },
+    {
+        "name" : "plato 2", 
+        "price" : "15.000",
+        "image" : "Image2"
+    },
+    {
+        "name" : "plato 3", 
+        "price" : "11.000",
+        "image" : "Image3"
+    },
+    {
+        "name" : "plato 4", 
+        "price" : "12.000",
+        "image" : "Image4"
+    },
+    {
+        "name" : "plato 5", 
+        "price" : "13.000",
+        "image" : "Image5"
+    }
+]`;
