@@ -104,16 +104,18 @@
         </section>
 
         <section id="carta" class="carta">
-            <!-- <h1 class="carta__title">Carta</h1>
-            <div class="carta__separator"></div> -->
+            <h1 class="carta__title">Carta</h1>
+            <div class="carta__separator"></div>
 
-            <!-- <div class="cardCarta">
-                <div class="cardCarta__image">
-                    <img src="img/hero.jpg" />
-                </div>
-                <h3 class="cardCarta__title">Comida Casera</h3>
-                <p class="cardCarta__price">$ xx.xxx</p>
-            </div> -->
+            <div id="carta__container" class="carta__container">
+                <!-- <div class="cardCarta">
+                    <div class="cardCarta__image">
+                        <img src="img/hero.jpg" />
+                    </div>
+                    <h3 class="cardCarta__title">Comida Casera</h3>
+                    <p class="cardCarta__price">$ xx.xxx</p>
+                </div> -->
+            </div>
 
         </section>
         <section id="contact" class="contact">
@@ -154,9 +156,8 @@
 
     <script>
         let mydata = JSON.parse(data);
-        let carta = document.getElementById("carta")
-        let allCarta = `<h1 class="carta__title">Carta</h1>
-            <div class="carta__separator"></div>`;
+        let carta = document.getElementById("carta__container")
+        let allCarta = "";
         con = 0;
         let fullCarta = mydata.map(() => {
             allCarta += `
@@ -176,10 +177,12 @@
         function menu(){
             let menu = document.getElementById("menu")
 
-            if (menu.style.display == "none" || menu.style.display == "") {
-                menu.style.display = "flex"
-            } else {
-                menu.style.display = "none"
+            if (screen.width < 1024){
+                if (menu.style.display == "none" || menu.style.display == "") {
+                    menu.style.display = "flex"
+                } else {
+                    menu.style.display = "none"
+                }
             }
         }
     </script>

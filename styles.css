@@ -371,3 +371,99 @@ footer p {
 footer p a {
     color: var(--orange);
 }
+
+
+@media (min-width:1024px){
+
+    body {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .headerUp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .instagram {
+        padding: 0;
+    }
+
+    .schedule {
+        padding: 0;
+    }
+
+    .iconMenu {
+        display: none;
+    }
+
+    .menu__separator {
+        display: none;
+    }
+    
+    #close-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        position: relative;
+        width: auto;
+        height: auto;
+        text-align: start;
+    }
+
+    .menu ul {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .menu a {
+        font-size: 2rem;
+        padding-left: 2rem;
+    }
+
+    .carta {
+        margin-top: 3rem;
+    }
+
+    .carta__container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cardCarta {
+        margin: 3rem;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .whatsapp{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .about__description {
+        font-size: 3rem;
+    }
+
+    .card__title {
+        font-size: 2.5rem;
+    }
+
+    .card__text {
+        font-size: 2rem;
+    }
+
+}
