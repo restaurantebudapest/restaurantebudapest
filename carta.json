@@ -1,27 +1,107 @@
 data = `[
     {
-        "name" : "plato 1", 
-        "price" : "20.000",
-        "image" : "hero"
+        "name" : "Res", 
+        "price_1" : "12.500",
+        "price_2" : "10.500",
+        "image" : "hero",
+        "alone": "y"
     },
     {
-        "name" : "plato 2", 
-        "price" : "15.000",
-        "image" : "Image2"
+        "name" : "Cerdo", 
+        "price_1" : "12.500",
+        "price_2" : "10.500",
+        "image" : "Image2",
+        "alone": "y"
     },
     {
-        "name" : "plato 3", 
-        "price" : "11.000",
-        "image" : "Image3"
+        "name" : "Chicharrón", 
+        "price_1" : "12.500",
+        "price_2" : "10.500",
+        "image" : "Image3",
+        "alone": "y"
     },
     {
-        "name" : "plato 4", 
-        "price" : "12.000",
-        "image" : "Image4"
+        "name" : "Pechuga", 
+        "price_1" : "12.500",
+        "price_2" : "10.500",
+        "image" : "Image4",
+        "alone": "y"
     },
     {
-        "name" : "plato 5", 
-        "price" : "13.000",
-        "image" : "Image5"
+        "name" : "Molida", 
+        "price_1" : "12.500",
+        "price_2" : "10.500",
+        "image" : "Image4",
+        "alone": "y"
+    },
+    {
+        "name" : "Posta", 
+        "price_1" : "15.000",
+        "price_2" : "13.000",
+        "image" : "Image4",
+        "alone": "y"
+    },
+    {
+        "name" : "Lengua", 
+        "price_1" : "15.000",
+        "price_2" : "13.000",
+        "image" : "Image4",
+        "alone": "y"
+    },
+    {
+        "name": "Filete de Baza",
+        "price_1": "14.000",
+        "price_2": "12.500",
+        "image": "Image3",
+        "alone": "y"
+    },
+    {
+        "name": "Filete de Tilapia",
+        "price_1": "15.000",
+        "price_2": "13.500",
+        "image": "Image3",
+        "alone": "y"
+    },
+    {
+        "name" : "Bandeja Paisa", 
+        "price_1" : "20.500",
+        "price_2" : "",
+        "image" : "Image5",
+        "alone": ""
+    },
+    {
+        "name" : "Cazuela", 
+        "price_1" : "20.500",
+        "price_2" : "",
+        "image" : "Image5",
+        "alone": ""
+    },
+    {
+        "name" : "Punta de Anca", 
+        "price_1" : "20.500",
+        "price_2" : "",
+        "image" : "Image5",
+        "alone": ""
+    },
+    {
+        "name" : "Menú Infantil<br>Nuggets o Milanesa", 
+        "price_1" : "8.500",
+        "price_2" : "",
+        "image" : "Image5",
+        "alone": ""
+    },
+    {
+        "name" : "Sopa de Pasta", 
+        "price_1" : "12.500",
+        "price_2" : "",
+        "image" : "Image5",
+        "alone": ""
+    },
+    {
+        "name" : "Pollo Albino", 
+        "price_1" : "12.500",
+        "price_2" : "",
+        "image" : "Image5",
+        "alone": ""
     }
 ]`;

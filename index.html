@@ -166,7 +166,20 @@
                     <img src="img/` + mydata[con].image +`.jpg" />
                 </div>
                 <h3 class="cardCarta__title">`+ mydata[con].name +`</h3>
-                <p class="cardCarta__price">$ `+ mydata[con].price +`</p>
+                <p class="cardCarta__price">$ `+ mydata[con].price_1 +`</p>`;
+                
+                if (mydata[con].alone == "y"){
+                    allCarta += `<h4 class="cardCarta__subtitle">Sopa o frijoles</h4>`;
+                }
+                
+                if (mydata[con].price_2 != ""){
+                    allCarta += `
+                    <p class="cardCarta__price">$ `+ mydata[con].price_2 +`</p>
+                    <h4 class="cardCarta__subtitle">Seco</h4>
+                        `;
+                }
+
+            allCarta += `
             </div>
             `;
             con ++;

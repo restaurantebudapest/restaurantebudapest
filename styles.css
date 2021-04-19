@@ -1,480 +1,481 @@
 :root {
-    --black: #1A1C20;
-    --brown: #D44000;
-    --orange: #FF7A00;
-    --white: #fff;
-    }
+  --black: #1a1c20;
+  --brown: #d44000;
+  --orange: #ff7a00;
+  --white: #fff;
+}
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 62.5%;
-    }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+}
 
 * {
-    margin: 0%;
-    list-style: none;
-    padding: 0%;
-    text-decoration: none;
-    }
+  margin: 0%;
+  list-style: none;
+  padding: 0%;
+  text-decoration: none;
+}
 
 .whatsappButton {
-    position: fixed;
-    bottom: 5rem;
-    right: 2rem;
-    z-index: 1;
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  z-index: 1;
 }
 
 .whatsapp {
-    background-image: url('img/Icons/whatsapp.svg');
-    width: 5rem;
-    height: 5rem;
+  background-image: url("img/Icons/whatsapp.svg");
+  width: 5rem;
+  height: 5rem;
 }
-    
+
 header {
-    background-color: var(--black);
-    color: var(--white);
-    width: 100%;
-    height: auto;
-    }
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+  height: auto;
+}
 
 /* Header up */
 .schedule {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    padding: 0 2rem;
-    padding-top: 3rem;
-    text-align: center;
-    }
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding: 0 2rem;
+  padding-top: 3rem;
+  text-align: center;
+}
 
 .schedule span {
-    font-weight: 500;
-    }
+  font-weight: 500;
+}
 
 .instagram {
-    align-items: center;
-    display: flex;
-    color: var(--white);
-    justify-content: center;
-    padding-top: 1rem;
-    outline: none;
-    }
+  align-items: center;
+  display: flex;
+  color: var(--white);
+  justify-content: center;
+  padding-top: 1rem;
+  outline: none;
+}
 
 .baseIcons {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .instagram span {
-    background-image: url('./img/Icons/Instagram.svg');
-    height: 2rem;
-    width: 2rem;
-    }
+  background-image: url("./img/Icons/Instagram.svg");
+  height: 2rem;
+  width: 2rem;
+}
 
 .instagram p {
-    padding-left: 1.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--orange);
-    }
+  padding-left: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--orange);
+}
 
 /* Logo */
 .container__logo {
-    display: flex;
-    align-items: flex-end;  
+  display: flex;
+  align-items: flex-end;
 }
 
 .container__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    position: sticky;
-    top: 0;
-    background-color: var(--black);
-    color: var(--white);
-    z-index: 1;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--black);
+  color: var(--white);
+  z-index: 1;
+}
 
 .logo {
-    background-image: url('./img/Logo.png');
-    height: 6rem;
-    width: 7.4rem;
-    padding-right: 2rem; 
-    }
+  background-image: url("./img/Logo.png");
+  height: 6rem;
+  width: 7.4rem;
+  padding-right: 2rem;
+}
 
-.container__logo p{
-    font-family: 'Didact Gothic', sans-serif;
-    line-height: 2.2rem;
-    font-size: 2rem;
-    font-weight: normal;
+.container__logo p {
+  font-family: "Didact Gothic", sans-serif;
+  line-height: 2.2rem;
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 /* menu */
 .menu {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--black);
-    color: var(--white);
-    top: 0;
-    left: 0;
-    text-align: center;
-    }
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  top: 0;
+  left: 0;
+  text-align: center;
+}
 
 #close-menu {
-    font-size: 3rem;
-    text-align: end;
+  font-size: 3rem;
+  text-align: end;
 }
 
 .menu__separator {
-    border-bottom: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
 }
 
 .menu ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
 }
 
 .menu a {
-    color: var(--white);
-    font-size: 3rem;
+  color: var(--white);
+  font-size: 3rem;
 }
 
 .iconMenu {
-    background-image: url('img/Icons/menu.svg');
-    height: 3rem;
-    width: 3rem;
-    margin-top: 1.5rem;
+  background-image: url("img/Icons/menu.svg");
+  height: 3rem;
+  width: 3rem;
+  margin-top: 1.5rem;
 }
 
 /* Hero */
 .hero {
-    width: 100%;
-    }
+  width: 100%;
+}
 
- .hero img {
-     width: 100%;
-     object-fit: cover;
-    }
-
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /* about */
 .about__title {
-    color: var(--white);
-    align-items: center;
-    background-color: var(--brown);
-    display: flex;
-    height: 10rem;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin-top: -.3rem;
+  color: var(--white);
+  align-items: center;
+  background-color: var(--brown);
+  display: flex;
+  height: 10rem;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -0.3rem;
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 500;
-    }
+  font-size: 3rem;
+  font-weight: 500;
+}
 
 .about__description {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 0 2rem;
-    padding-top: 3rem;
-    text-align: center;
-    }
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 0 2rem;
+  padding-top: 3rem;
+  text-align: center;
+}
 
 /* cards */
 .cards {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 6rem;
-    padding: 0 2rem;
-    }
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+  padding: 0 2rem;
+}
 
 .card {
-    align-items: center;
-    display: inherit;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    text-align: center;
-    }
+  align-items: center;
+  display: inherit;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 .card span {
-    height: 10rem;
-    width: 10rem;
-    }
+  height: 10rem;
+  width: 10rem;
+}
 
 .iconCooking {
-    background-image: url('./img/Icons/Icon\ Cooking.svg');
-    }
+  background-image: url("./img/Icons/Icon\ Cooking.svg");
+}
 
 .iconVegetables {
-    background-image: url('./img/Icons/Icon\ vegetables.svg');
-    }
+  background-image: url("./img/Icons/Icon\ vegetables.svg");
+}
 
 .iconHere {
-    background-image: url('img/Icons/Icon\ here.svg');
-    }
+  background-image: url("img/Icons/Icon\ here.svg");
+}
 
 .carta__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card__title {
-    font-size: 2rem;
-    font-weight: 500;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    }
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 .card__text {
-    font-size: 1.8rem;
-    }
+  font-size: 1.8rem;
+}
 
 .about__banner {
-    position: relative;
-    min-height: 10rem;
-    max-height: 37rem;
-    text-align: center;
-    }
+  position: relative;
+  min-height: 10rem;
+  max-height: 37rem;
+  text-align: center;
+}
 
 .about__banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .about__banner p {
-    color: var(--white);
-    font-weight: 500;
-    font-size: 3rem;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    bottom: calc(40%);
-    }
+  color: var(--white);
+  font-weight: 500;
+  font-size: 3rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: calc(40%);
+}
 
 .carta {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .carta__title {
-    font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.carta__separator{
-    border-bottom: .4rem solid var(--orange) ;
-    width: 90%;
+.carta__separator {
+  border-bottom: 0.4rem solid var(--orange);
+  width: 90%;
 }
 
 .cardCarta {
-    width: 90%;
-    min-width: 25rem;
-    max-width: 38rem;
-    margin: 3rem 0 ;
+  width: 90%;
+  min-width: 25rem;
+  max-width: 38rem;
+  min-height: 39.2rem;
+  margin: 3rem 0;
 }
 
 .cardCarta__image {
-    width: 100%;
+  width: 100%;
 }
 
 .cardCarta__image img {
-    width: 100%;
+  width: 100%;
 }
 
 .cardCarta__title {
-    font-size: 2.5rem;
-    margin-top: 3rem;
+  font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 .cardCarta__price {
-    font-size: 2rem;
-    margin-top: 1rem;
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
+
+.cardCarta__subtitle {
+  font-size: 1.5rem;
 }
 
 .contact {
-    padding: 2.4rem;
-    background-color: var(--brown);
-    color: var(--white);
-    text-align: center;
+  padding: 2.4rem;
+  background-color: var(--brown);
+  color: var(--white);
+  text-align: center;
 }
 
 .container__contact-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .iconPhone {
-    background-image: url('./img/Icons/Icon\ Phone.svg');
-    height: 3rem;
-    width: 3rem;
+  background-image: url("./img/Icons/Icon\ Phone.svg");
+  height: 3rem;
+  width: 3rem;
 }
 
 .iconAddress {
-    background-image: url('./img/Icons/Icon\ Address.svg');
-    height: 3rem;
-    width: 3rem;
+  background-image: url("./img/Icons/Icon\ Address.svg");
+  height: 3rem;
+  width: 3rem;
 }
 
 .contact__title {
-    font-size: 2.5rem;
-    margin-left: 2rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
 .container__contact-description {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contact__description {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .bank {
-    background-color: var(--black);
-    color: var(--white);
-    width: 100%;
-    padding: 2rem 0;
-    text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .bank__small {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
-.bank__big{
-    font-size: 2rem;
+.bank__big {
+  font-size: 2rem;
 }
 
 footer {
-    text-align: center;
-    padding: 2rem 0;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 footer p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 footer p a {
-    color: var(--orange);
+  color: var(--orange);
 }
 
+@media (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
 
-@media (min-width:1024px){
+  .headerUp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
 
-    body {
-        max-width: 1440px;
-        margin: auto;
-    }
+  .instagram {
+    padding: 0;
+  }
 
-    .headerUp {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 2rem;
-    }
+  .schedule {
+    padding: 0;
+  }
 
-    .instagram {
-        padding: 0;
-    }
+  .iconMenu {
+    display: none;
+  }
 
-    .schedule {
-        padding: 0;
-    }
+  .menu__separator {
+    display: none;
+  }
 
-    .iconMenu {
-        display: none;
-    }
+  #close-menu {
+    display: none;
+  }
 
-    .menu__separator {
-        display: none;
-    }
-    
-    #close-menu {
-        display: none;
-    }
+  .menu {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: start;
+  }
 
-    .menu {
-        display: flex;
-        position: relative;
-        width: auto;
-        height: auto;
-        text-align: start;
-    }
+  .menu ul {
+    flex-direction: row;
+    height: auto;
+  }
 
-    .menu ul {
-        flex-direction: row;
-        height: auto;
-    }
+  .menu a {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
 
-    .menu a {
-        font-size: 2rem;
-        padding-left: 2rem;
-    }
+  .carta {
+    margin-top: 3rem;
+  }
 
-    .carta {
-        margin-top: 3rem;
-    }
+  .carta__container {
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    .carta__container {
-        width: 90%;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  .cardCarta {
+    margin: 3rem;
+  }
 
-    .cardCarta {
-        margin: 3rem;
-    }
+  .contact {
+    display: flex;
+    justify-content: space-around;
+  }
 
-    .contact {
-        display: flex;
-        justify-content: space-around;
-    }
+  .whatsapp {
+    height: 9rem;
+    width: 9rem;
+  }
 
-    .whatsapp{
-        height: 9rem;
-        width: 9rem;
-    }
+  h1 {
+    font-size: 5rem;
+  }
 
-    h1 {
-        font-size: 5rem;
-    }
+  .about__description {
+    font-size: 3rem;
+  }
 
-    .about__description {
-        font-size: 3rem;
-    }
+  .card__title {
+    font-size: 2.5rem;
+  }
 
-    .card__title {
-        font-size: 2.5rem;
-    }
+  .card__text {
+    font-size: 2rem;
+  }
 
-    .card__text {
-        font-size: 2rem;
-    }
-
-    footer p {
-        font-size: 2rem;
-    }
-
+  footer p {
+    font-size: 2rem;
+  }
 }
